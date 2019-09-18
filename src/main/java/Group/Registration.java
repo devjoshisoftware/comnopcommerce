@@ -91,7 +91,7 @@ public class Registration extends Utils {
         //fill friend's email address
         enterText(By.id("FriendEmail"),"testtest123456@test.com");
         //fill personal message
-        enterText(By.name("PersonalMessage"),"This very good deal mate, don't need to miss it. go ahead and buy it");
+        enterText(By.name("PersonalMessage"),"Please Check This Out.");
         //click on send email
         clickOnElements(By.name("send-email"));
         //message end of the process will be compare to actual result
@@ -108,11 +108,11 @@ public class Registration extends Utils {
         enterText(By.xpath("//input[@name='LastName']"), loadProps.getProperty("LastName"));
         //enter date of birth
         //date
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthDay']"),(20));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthDay']"),(loadProps.getProperty("Date")));
         //month
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthMonth']"),(6));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthMonth']"),(loadProps.getProperty("Month")));
         //year
-        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),("2000"));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),(loadProps.getProperty("Year")));
         //enter email
         enterText(By.name("Email"),"test"+randomDate()+"@test.com");
         //enter the password
@@ -141,11 +141,11 @@ public class Registration extends Utils {
         enterText(By.xpath("//input[@name='LastName']"), loadProps.getProperty("LastName"));
         //enter date of birth
         //date
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthDay']"),(20));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthDay']"),(loadProps.getProperty("Date")));
         //month
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthMonth']"),(6));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthMonth']"),(loadProps.getProperty("Month")));
         //year
-        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),("2000"));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),(loadProps.getProperty("Year")));
         //enter email
         enterText(By.name("Email"),"test"+randomDate()+"@test.com");
         //enter the password
@@ -182,11 +182,11 @@ public class Registration extends Utils {
         enterText(By.xpath("//input[@name='LastName']"), loadProps.getProperty("LastName"));
         //enter date of birth
         //date
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthDay']"),(10));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthDay']"),(loadProps.getProperty("Date")));
         //month
-        selectByVisibleNumber(By.xpath("//select[@name = 'DateOfBirthMonth']"),(1));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthMonth']"),(loadProps.getProperty("Month")));
         //year
-        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),("1984"));
+        selectByVisibleText(By.xpath("//select[@name = 'DateOfBirthYear']"),(loadProps.getProperty("Year")));
         //enter email
         enterText(By.name("Email"),"test"+randomDate()+"@test.com");
         //enter the password
